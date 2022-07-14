@@ -1,6 +1,7 @@
 import {motion} from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import styled from 'styled-components'
 
 function Cuisine() {
 
@@ -32,5 +33,6 @@ function Cuisine() {
     </div>
   )
 }
+
 
 export default Cuisine
