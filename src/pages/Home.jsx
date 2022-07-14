@@ -3,7 +3,10 @@ import Popular from "../components/Popular";
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+        <Veggie/>
+        <Popular/>
+    </div>
   )
 }
 
