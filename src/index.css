@@ -91,3 +91,26 @@ border-radius: 2rem;
   justify-content: center;
   margin: 2rem 0rem;
 }
+
+/* cuisine styling */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
+
+}
+
+.grid-card img {
+  width: 100%;
+  border-radius: 2rem;
+
+}
+
+.grid-card a {
+  text-decoration: none;
+
+}
+.grid-card h4 {
+  text-align: center;
+  padding: 1rem;
+}
