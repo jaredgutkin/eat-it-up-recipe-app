@@ -8,7 +8,6 @@ function Search() {
 
     const submitHandler = (e) => {
         e.preventDefault()
-        console.log('hey')
         navigate('/searched/' + input)
     }
   return (
