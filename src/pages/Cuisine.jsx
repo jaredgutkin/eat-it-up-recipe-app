@@ -1,7 +1,7 @@
 import {motion} from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import styled from 'styled-components'
+
 
 function Cuisine() {
 
@@ -21,7 +21,13 @@ function Cuisine() {
         console.log(params.type)
     }, [params.type])
   return (
-    <div className='grid'>
+    <motion.div className='grid'
+        animate={{opacity: 1}}
+        initial={{opacity: 0}}
+        exit={{opacity: 0}}
+        transition={{duration: 0.5}}
+    >
+        
         {cuisine.map((item) => {
             return(
                 <div className="grid-card" key={item.id}>
@@ -32,7 +38,7 @@ function Cuisine() {
                 </div>
             )
         })}
-    </div>
+    </motion.div>
   )
 }
 
